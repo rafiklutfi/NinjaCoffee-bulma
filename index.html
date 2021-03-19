@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <title>Ninja Coffee</title>
+  </head>
+  <body>
+    <nav class="navbar has shadow is-white">
+      <!-- logo / brand -->
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img
+            src="assets/logo.png"
+            alt="site logo"
+            style="max-height: 70px"
+            class="py-2 px-2"
+          />
+        </a>
+        <a class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a href="" class="navbar-item">My Accounts</a>
+          <a href="" class="navbar-item">Shopping Cart</a>
+        </div>
+      </div>
+    </nav>
+    <!--breadcrumbs-->
+    <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul>
+                <li><a>Coffe Ninja</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Docker Dark Roast</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- product info-->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet is-3-desktop">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+                    <h1 class="is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero debitis eveniet quas. Excepturi at doloremque, iusto eaque inventore totam.</p>
+                </div>
+                <div class="column is-6-tablet is-5-desktop has-text-centered">
+                    <img src="assets/product.png" alt="docker coffee image" class="px-6">
+                </div>
+                <div class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4">$10</div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestias!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <!--Tabbed Content-->
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Product Detail</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a>Delivery Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Product Details</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda labore dolore aliquam animi architecto, reiciendis inventore sit, officiis, aperiam natus molestias eos! Cum voluptatem eos accusantium eius aspernatur voluptatibus consectetur?</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-5 title">Delivery Information</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda labore dolore aliquam animi architecto, reiciendis inventore sit, officiis</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="column is-5-tablet">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim, adipisci ex corporis aliquam eos? Dolor eos tempore corrupti maiores illo ex mollitia sapiente veritatis praesentium, adipisci minus at fugit?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</html>
